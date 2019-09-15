@@ -1,0 +1,18 @@
+[
+  {
+    "type": "major",
+    "emojis": []
+  },
+  {
+    "type": "minor",
+    "emojis": [":sparkles:"]
+  },
+  {
+    "type": "patch",
+    "emojis": [":art:", "zap", "fire", "bug", ":ambulance:"]
+  },
+  {
+    "type": "no-release",
+    "emojis": []
+  }
+]
