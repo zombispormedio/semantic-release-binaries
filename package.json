@@ -6,11 +6,10 @@
   "author": "Xavier Serrano <zombispormedio007@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "release": "semantic-release",
+    "release": "node_modules/.bin/semantic-release",
     "build": "pkg index.js -o build/semantic-release -t node12-linux-x64,node12-macos-x64,node12-win-x64"
   },
   "devDependencies": {
-    "lerna": "^3.22.1",
     "pkg": "^4.4.9"
   },
   "dependencies": {
