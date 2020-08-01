@@ -16,8 +16,6 @@ jobs:
           node-version: 12
       - name: Install dependencies
         run: npm install
-      - name: Dry run
-        run: node .
       - name: Build binaries
         run: npm run build
       - name: Release
