@@ -1,39 +1,21 @@
 {
-  "name": "@zombispormedio/releases",
-  "version": "0.0.0",
-  "description": "",
+  "name": "semantic-release-binaries",
+  "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/zombispormedio/semantic-release-binaries.git",
+  "author": "Xavier Serrano <zombispormedio007@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "download-gitemojis": "node scripts/downloadGitmojis",
-    "generate-readme": "node scripts/generateReadme"
+    "release": "semantic-release",
+    "build": "pkg index.js -o build/semantic-release -t node12-linux-x64,node12-macos-x64,node12-win-x64"
   },
-  "files": [
-    "index.js",
-    "lib",
-    "bin"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zombispormedio/releases.git"
-  },
-  "author": "Xavier Serrano",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zombispormedio/releases/issues"
-  },
-  "homepage": "https://github.com/zombispormedio/releases#readme",
   "devDependencies": {
-    "@semantic-release/changelog": "^3.0.4",
-    "@semantic-release/github": "^5.4.3",
-    "conventional-changelog-atom": "^2.0.1",
-    "eslint": "^6.4.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "markdown-builder": "^0.9.0",
-    "semantic-release": "^15.13.24",
-    "prettier": "^1.18.2",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-prettier": "^3.1.0"
+    "lerna": "^3.22.1",
+    "pkg": "^4.4.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@semantic-release/git": "^9.0.0",
+    "conventional-changelog-atom": "^2.0.7",
+    "semantic-release": "^17.1.1"
+  }
 }
