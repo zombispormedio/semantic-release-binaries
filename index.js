@@ -1,5 +1,5 @@
 const semanticRelease = require("semantic-release");
-const config = require("./base.release.config");
+const config = require("./base.config");
 
 semanticRelease(config, {
   stdout: process.stdout,
